@@ -97,7 +97,7 @@ const Footer = () => {
               <div className="space-y-3 text-sm">
                 <div className="flex items-center">
                   <span className="text-orange-500 mr-3">📞</span>
-                  <span className="text-gray-400">97195 88684</span>
+                  <span className="text-gray-400">9719588684</span>
                 </div>
                 <div className="flex items-start">
                   <span className="text-orange-500 mr-3">📧</span>
