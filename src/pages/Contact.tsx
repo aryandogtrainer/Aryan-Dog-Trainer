@@ -48,7 +48,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-800">Email Address</h3>
-                    <p className="text-gray-600">dogtrainerdemo@gmail.com</p>
+                    <p className="text-gray-600">kanhavairagi042@gmail.com</p>
                   </div>
                 </div>
 
@@ -97,7 +97,7 @@ const Contact = () => {
                     <Facebook className="w-5 h-5 text-white" />
                   </a>
                   <a
-                    href="mailto:dogtrainerdemo@gmail.com"
+                    href="mailto:kanhavairagi042@gmail.com"
                     className="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors"
                   >
                     <Mail className="w-5 h-5 text-white" />
@@ -120,7 +120,7 @@ const Contact = () => {
                     className="w-full inline-flex items-center justify-center px-6 py-3 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors font-medium"
                   >
                     <Phone className="w-5 h-5 mr-2" />
-                    Call +91 97195 88684
+                    Call +91 9719588684
                   </a>
                 </div>
 
@@ -141,7 +141,7 @@ const Contact = () => {
                   <h3 className="font-semibold text-gray-800 mb-2">Send Email</h3>
                   <p className="text-gray-600 text-sm mb-4">Send us a detailed email about your dog's training needs.</p>
                   <a
-                    href="mailto:dogtrainerdemo@gmail.com"
+                    href="mailto:kanhavairagi042@gmail.com"
                     className="w-full inline-flex items-center justify-center px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors font-medium"
                   >
                     <Mail className="w-5 h-5 mr-2" />
