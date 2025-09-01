@@ -45,7 +45,7 @@ const Footer = () => {
                   <span className="text-white font-bold text-lg">🐕</span>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold">Ryan Dog Trainer</h3>
+                  <h3 className="text-xl font-bold">Aryan Dog Trainer</h3>
                   <p className="text-sm text-gray-400">Professional Training</p>
                 </div>
               </div>
