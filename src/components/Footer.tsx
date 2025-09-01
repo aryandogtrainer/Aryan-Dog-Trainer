@@ -71,7 +71,6 @@ const Footer = () => {
                 </a>
                 <a
                   href="mailto:kanhavairagi042@gmail.com"
-                  href="mailto:aryandogtrainer@gmail.com"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   <Mail className="w-5 h-5" />
@@ -101,7 +100,9 @@ const Footer = () => {
                 </div>
                 <div className="flex items-start">
                   <span className="text-orange-500 mr-3">📧</span>
-                  <span className="text-gray-400">dogtrainerdemo@gmail.com</span>
+                  <span className="text-gray-400">kanhavairagi042@gmail.com</span>
+                  <span className="text-orange-500 mr-3">📧</span>
+                  <span className="text-gray-400">aryandogtrainer@gmail.com</span>
                 </div>
                 <div className="flex items-start">
                   <span className="text-orange-500 mr-3">📍</span>
