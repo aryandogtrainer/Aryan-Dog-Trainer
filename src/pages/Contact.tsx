@@ -1,87 +1,104 @@
-import { Card, CardContent } from '@/components/ui/card';
 import { Phone, MapPin, Mail, Clock, Facebook, Instagram } from 'lucide-react';
 
 const Contact = () => {
-  const contactInfo = [
-    {
-      icon: <Phone className="w-6 h-6 text-primary" />,
-      title: "Phone Number",
-      details: "+919719588684"
-    },
-    {
-      icon: <MapPin className="w-6 h-6 text-primary" />,
-      title: "Address",
-      details: "C-83, Ground Floor, Bhai Bhai Rd, Block E, Qutub Vihar Phase 2, Goyla Village, Delhi, 110043"
-    },
-    {
-      icon: <Mail className="w-6 h-6 text-primary" />,
-      title: "Email",
-      details: "dogtrainerdemo@gmail.com"
-    },
-    {
-      icon: <Clock className="w-6 h-6 text-primary" />,
-      title: "Hours",
-      details: "10:00 AM to 07:00 PM"
-    }
-  ];
+  const handleWhatsAppClick = () => {
+    const message = encodeURIComponent("Hello Aryan, I am interested in your dog training services please contact me.");
+    const whatsappUrl = `https://wa.me/919719588684?text=${message}`;
+    window.open(whatsappUrl, '_blank');
+  };
 
   return (
-    <div>
+    <div className="bg-gray-50 min-h-screen">
       {/* Hero Section */}
-      <section className="hero-gradient text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
-          <p className="text-xl opacity-90 max-w-3xl mx-auto">
-            Get in touch with us to discuss your dog's training needs and schedule a consultation.
+      <section className="bg-white py-16">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Contact Us</h1>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            Ready to start your dog's training journey? Get in touch with us today! We're here to answer 
+            your questions and help you choose the perfect training program.
           </p>
         </div>
       </section>
 
       {/* Contact Information */}
       <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             
-            {/* Contact Details */}
-            <div>
-              <h2 className="text-2xl font-bold text-secondary mb-8">Get in Touch</h2>
+            {/* Get In Touch */}
+            <div className="bg-white rounded-2xl p-8 shadow-sm">
+              <h2 className="text-2xl font-bold text-gray-800 mb-8">Get In Touch</h2>
               <div className="space-y-6">
-                {contactInfo.map((info, index) => (
-                  <div key={index} className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-light-orange rounded-full flex items-center justify-center flex-shrink-0">
-                      {info.icon}
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-secondary mb-1">{info.title}</h3>
-                      <p className="text-muted-foreground">{info.details}</p>
-                    </div>
+                
+                {/* Phone Number */}
+                <div className="flex items-center space-x-4">
+                  <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Phone className="w-6 h-6 text-orange-500" />
                   </div>
-                ))}
+                  <div>
+                    <h3 className="font-semibold text-gray-800">Phone Number</h3>
+                    <p className="text-gray-600">+91 97195 88684</p>
+                  </div>
+                </div>
+
+                {/* Email */}
+                <div className="flex items-center space-x-4">
+                  <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Mail className="w-6 h-6 text-orange-500" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-gray-800">Email Address</h3>
+                    <p className="text-gray-600">dogtrainerdemo@gmail.com</p>
+                  </div>
+                </div>
+
+                {/* Address */}
+                <div className="flex items-start space-x-4">
+                  <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <MapPin className="w-6 h-6 text-orange-500" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-gray-800">Address</h3>
+                    <p className="text-gray-600">C-83, Ground Floor, Bhai Bhai Rd, Block E, Qutub Vihar Phase 2, Goyla Village, Delhi, 110043</p>
+                  </div>
+                </div>
+
+                {/* Business Hours */}
+                <div className="flex items-start space-x-4">
+                  <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Clock className="w-6 h-6 text-orange-500" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-gray-800">Business Hours</h3>
+                    <p className="text-gray-600">10:00 AM to 07:00 PM</p>
+                    <p className="text-gray-500 text-sm">Monday - Sunday</p>
+                  </div>
+                </div>
               </div>
 
-              {/* Social Media */}
+              {/* Follow Us */}
               <div className="mt-8">
-                <h3 className="font-semibold text-secondary mb-4">Follow Us</h3>
-                <div className="flex space-x-4">
-                  <a
-                    href="https://www.facebook.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-primary-hover transition-colors"
-                  >
-                    <Facebook className="w-5 h-5 text-white" />
-                  </a>
+                <h3 className="font-semibold text-gray-800 mb-4">Follow Us</h3>
+                <div className="flex space-x-3">
                   <a
                     href="https://www.instagram.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-primary-hover transition-colors"
+                    className="w-10 h-10 bg-pink-500 rounded-full flex items-center justify-center hover:bg-pink-600 transition-colors"
                   >
                     <Instagram className="w-5 h-5 text-white" />
                   </a>
                   <a
+                    href="https://www.facebook.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors"
+                  >
+                    <Facebook className="w-5 h-5 text-white" />
+                  </a>
+                  <a
                     href="mailto:dogtrainerdemo@gmail.com"
-                    className="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-primary-hover transition-colors"
+                    className="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors"
                   >
                     <Mail className="w-5 h-5 text-white" />
                   </a>
@@ -89,51 +106,50 @@ const Contact = () => {
               </div>
             </div>
 
-            {/* Map Placeholder */}
-            <div>
-              <Card className="shadow-card h-full">
-                <CardContent className="p-0 h-full min-h-[400px]">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.744008157916!2d77.01648!3d28.552342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1bb13c6d8e85%3A0x1e3a1f8b1b1b1b1b!2sQutub%20Vihar%20Phase%202%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1234567890"
-                    width="100%"
-                    height="100%"
-                    style={{ border: 0, borderRadius: '8px' }}
-                    allowFullScreen
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    title="Aryan Dog Trainer Location"
-                  ></iframe>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </div>
-      </section>
+            {/* Quick Actions */}
+            <div className="space-y-6">
+              <div className="bg-white rounded-2xl p-8 shadow-sm">
+                <h2 className="text-2xl font-bold text-gray-800 mb-6">Quick Actions</h2>
+                
+                {/* Call Now */}
+                <div className="mb-6">
+                  <h3 className="font-semibold text-gray-800 mb-2">Call Now</h3>
+                  <p className="text-gray-600 text-sm mb-4">Speak directly with Ryan for immediate assistance and consultation.</p>
+                  <a
+                    href="tel:+919719588684"
+                    className="w-full inline-flex items-center justify-center px-6 py-3 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors font-medium"
+                  >
+                    <Phone className="w-5 h-5 mr-2" />
+                    Call +91 97195 88684
+                  </a>
+                </div>
 
-      {/* Quick Contact */}
-      <section className="py-16 bg-muted">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-secondary mb-6">
-            Ready to Start Training?
-          </h2>
-          <p className="text-lg text-muted-foreground mb-8">
-            Contact us today to discuss your dog's training needs and schedule a consultation.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="tel:+919719588684"
-              className="inline-flex items-center justify-center px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary-hover transition-colors"
-            >
-              <Phone className="w-5 h-5 mr-2" />
-              Call Now
-            </a>
-            <a
-              href="mailto:dogtrainerdemo@gmail.com"
-              className="inline-flex items-center justify-center px-6 py-3 bg-secondary text-secondary-foreground rounded-lg hover:bg-secondary/90 transition-colors"
-            >
-              <Mail className="w-5 h-5 mr-2" />
-              Send Email
-            </a>
+                {/* WhatsApp Chat */}
+                <div className="mb-6 p-4 bg-green-50 rounded-lg border border-green-200">
+                  <h3 className="font-semibold text-gray-800 mb-2">WhatsApp Chat</h3>
+                  <p className="text-gray-600 text-sm mb-4">Send a quick message on WhatsApp for instant communication.</p>
+                  <button
+                    onClick={handleWhatsAppClick}
+                    className="w-full inline-flex items-center justify-center px-6 py-3 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors font-medium"
+                  >
+                    💬 Chat on WhatsApp
+                  </button>
+                </div>
+
+                {/* Send Email */}
+                <div className="p-4 bg-blue-50 rounded-lg border border-blue-200">
+                  <h3 className="font-semibold text-gray-800 mb-2">Send Email</h3>
+                  <p className="text-gray-600 text-sm mb-4">Send us a detailed email about your dog's training needs.</p>
+                  <a
+                    href="mailto:dogtrainerdemo@gmail.com"
+                    className="w-full inline-flex items-center justify-center px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors font-medium"
+                  >
+                    <Mail className="w-5 h-5 mr-2" />
+                    Send Email
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
