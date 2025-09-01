@@ -22,7 +22,7 @@ const Footer = () => {
               href="tel:+919719588684"
               className="inline-flex items-center justify-center px-8 py-3 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors font-medium"
             >
-              Call Now: +91 97195 88684
+              Call Now: +91 9719588684
             </a>
             <button
               onClick={handleWhatsAppClick}
@@ -70,7 +70,8 @@ const Footer = () => {
                   <Facebook className="w-5 h-5" />
                 </a>
                 <a
-                  href="mailto:dogtrainerdemo@gmail.com"
+                  href="mailto:kanhavairagi042@gmail.com"
+                  href="mailto:aryandogtrainer@gmail.com"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   <Mail className="w-5 h-5" />
