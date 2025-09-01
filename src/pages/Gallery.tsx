@@ -9,8 +9,8 @@ const Gallery = () => {
       id: 1,
       title: "Basic Training Session",
       description: "Puppy learning basic commands",
-      imageUrl: "https://images.unsplash.com/photo-1551717743-49959800b1f6?w=400&h=300&fit=crop",
-      link: "https://images.unsplash.com/photo-1551717743-49959800b1f6"
+      imageUrl: "https://drive.google.com/drive/folders/18vFojp1sUTuneib49Xxwoy9CAoAZc8oW",
+      link: "https://drive.google.com/file/d/1yvjfd5m2oC0-e5ftu3PSGeS0yfyRfbXn/view?usp=drive_link"
     },
     {
       id: 2,
