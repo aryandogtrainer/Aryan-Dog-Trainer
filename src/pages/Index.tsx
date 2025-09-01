@@ -41,7 +41,7 @@ const Index = () => {
                 <Button size="lg" variant="secondary" className="text-lg px-8">
                   <Link to="/services">Our Services</Link>
                 </Button>
-                <Button size="lg" variant="outline" className="text-lg px-8 border-white text-white hover:bg-white hover:text-primary">
+                <Button size="lg" variant="outline" className="text-lg px-8 border-white text-black hover:bg-white hover:text-primary">
                   <Link to="/contact">Contact Us</Link>
                 </Button>
               </div>
