@@ -103,7 +103,7 @@ const Gallery = () => {
         </div>
       </section>
 
-      {/* Upload Instructions */}
+      <--{/* Upload Instructions */}
       <section className="py-16 bg-muted">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-secondary mb-6">
@@ -127,7 +127,7 @@ const Gallery = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section>-->
 
       {/* Modal for enlarged image */}
       {selectedImage && (
