@@ -101,8 +101,6 @@ const Footer = () => {
                 <div className="flex items-start">
                   <span className="text-orange-500 mr-3">📧</span>
                   <span className="text-gray-400">kanhavairagi042@gmail.com</span>
-                  <span className="text-orange-500 mr-3">📧</span>
-                  <span className="text-gray-400">aryandogtrainer@gmail.com</span>
                 </div>
                 <div className="flex items-start">
                   <span className="text-orange-500 mr-3">📍</span>
