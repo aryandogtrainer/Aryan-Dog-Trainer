@@ -12,27 +12,27 @@ const Gallery = () => {
       description: 'Puppy learning basic commands'
     },
     { 
-      url: 'https://github.com/aryandogtrainer/aryan-dog-trainer/blob/main/src/assets/IMG-20250901-WA0012.jpg', 
+      url: 'https://raw.githubusercontent.com/aryandogtrainer/aryan-dog-trainer/blob/main/src/assets/IMG-20250901-WA0009.jpg', 
       title: 'Obedience Training',
       description: 'Advanced command training'
     },
     { 
-      url: 'https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=800&h=800&fit=crop', 
+      url: 'https://raw.githubusercontent.com/aryandogtrainer/aryan-dog-trainer/blob/main/src/assets/IMG-20250901-WA0009.jpg', 
       title: 'Success Story',
       description: 'Happy dog with owner'
     },
     { 
-      url: 'https://images.unsplash.com/photo-1559190394-fd4d32d4e7a8?w=800&h=800&fit=crop', 
+      url: 'https://raw.githubusercontent.com/aryandogtrainer/aryan-dog-trainer/blob/main/src/assets/IMG-20250901-WA0009.jpg', 
       title: 'Group Training',
       description: 'Socialization training'
     },
     { 
-      url: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7f09?w=800&h=800&fit=crop', 
+      url: 'https://raw.githubusercontent.com/aryandogtrainer/aryan-dog-trainer/blob/main/src/assets/IMG-20250901-WA0009.jpg', 
       title: 'Advanced Training',
       description: 'Agility and advanced commands'
     },
     { 
-      url: 'https://images.unsplash.com/photo-1552053831-71594a27632d?w=800&h=800&fit=crop', 
+      url: 'https://raw.githubusercontent.com/aryandogtrainer/aryan-dog-trainer/blob/main/src/assets/IMG-20250901-WA0009.jpg', 
       title: 'Therapy Training',
       description: 'Emotional support training'
     }
