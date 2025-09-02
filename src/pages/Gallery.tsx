@@ -6,7 +6,7 @@ const Gallery = () => {
   // Optional: add 'description' for additional text below the title
   const images = [
     { 
-      url: 'https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=800&h=600&fit=crop', 
+      url: 'https://github.com/aryandogtrainer/aryan-dog-trainer/blob/main/src/assets/hero-image.jpg', 
       title: 'Basic Training Session',
       description: 'Puppy learning basic commands'
     },
