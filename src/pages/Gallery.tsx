@@ -101,17 +101,17 @@ const Gallery = () => {
             ))}
           </div>
           
-          /*{/* Instructions for adding new images */}
+          {/* Instructions for adding new images */}
           <div className="mt-12 p-6 bg-muted/50 rounded-lg border-l-4 border-primary">
             <h3 className="font-semibold text-foreground mb-2">📸 How to Add New Images</h3>
             <p className="text-sm text-muted-foreground mb-3">
               To add new images to this gallery, simply update the <code className="bg-primary/10 px-2 py-1 rounded text-primary">images</code> array in the component:
             </p>
-            <div className="bg-card p-4 rounded-md border text-sm font-mono">
+            <!--<div className="bg-card p-4 rounded-md border text-sm font-mono">
               <div className="text-muted-foreground">// Add this to the images array:</div>
               <div className="text-foreground mt-1">
                 {`{ url: 'your-image-url.jpg', title: 'Your Title', description: 'Optional description' }`}
-              </div>*/
+              </div>-->
             </div>
           </div>
         </div>
