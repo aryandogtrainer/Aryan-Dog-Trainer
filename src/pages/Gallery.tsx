@@ -12,7 +12,7 @@ const Gallery = () => {
       description: 'Puppy learning basic commands'
     },
     { 
-      url: 'https://raw.githubusercontent.com/aryandogtrainer/aryan-dog-trainer/main/src/assets/IMG_20250612_144515', 
+      url: 'https://raw.githubusercontent.com/aryandogtrainer/aryan-dog-trainer/main/src/assets/IMG_20250612_144515.jpg', 
       title: 'Obedience Training',
       description: 'Advanced command training'
     },
