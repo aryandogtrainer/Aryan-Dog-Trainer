@@ -32,8 +32,7 @@ const Gallery = () => {
       description: 'Agility and advanced commands'
     },
     { 
-      url: 'https://raw.githubusercontent.com/aryandogtrainer/aryan-dog-trainer/main/src/assets/IMG-20250901-WA0017.jpg
-', 
+      url: 'https://raw.githubusercontent.com/aryandogtrainer/aryan-dog-trainer/main/src/assets/IMG-20250901-WA0017.jpg', 
       title: 'Therapy Training',
       description: 'Emotional support training'
     }
