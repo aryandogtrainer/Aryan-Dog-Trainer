@@ -101,7 +101,7 @@ const Gallery = () => {
             ))}
           </div>
           
-          {/* Instructions for adding new images
+          {/* Instructions for adding new images - commented out for cleaner UI
           <div className="mt-12 p-6 bg-muted/50 rounded-lg border-l-4 border-primary">
             <h3 className="font-semibold text-foreground mb-2">📸 How to Add New Images</h3>
             <p className="text-sm text-muted-foreground mb-3">
@@ -111,9 +111,10 @@ const Gallery = () => {
               <div className="text-muted-foreground">// Add this to the images array:</div>
               <div className="text-foreground mt-1">
                 {`{ url: 'your-image-url.jpg', title: 'Your Title', description: 'Optional description' }`}
-              </div>*/}
+              </div>
             </div>
           </div>
+          */}
         </div>
       </section>
     </div>
