@@ -35,6 +35,31 @@ const Gallery = () => {
       url: 'https://raw.githubusercontent.com/aryandogtrainer/aryan-dog-trainer/main/src/assets/IMG-20250901-WA0017.jpg', 
       title: 'Therapy Training',
       description: 'Emotional support training'
+    },
+    { 
+      url: 'https://raw.githubusercontent.com/aryandogtrainer/aryan-dog-trainer/main/src/assets/IMG-20250901-WA0018.jpg', 
+      title: 'Advanced Training',
+      description: 'Agility and advanced commands'
+    },
+    { 
+      url: 'https://raw.githubusercontent.com/aryandogtrainer/aryan-dog-trainer/main/src/assets/IMG-20250901-WA0022.jpg', 
+      title: 'Advanced Training',
+      description: 'Agility and advanced commands'
+    },
+    { 
+      url: 'https://raw.githubusercontent.com/aryandogtrainer/aryan-dog-trainer/main/src/assets/IMG-20250901-WA0023.jpg', 
+      title: 'Advanced Training',
+      description: 'Agility and advanced commands'
+    },
+      { 
+      url: 'https://raw.githubusercontent.com/aryandogtrainer/aryan-dog-trainer/main/src/assets/IMG-20250901-WA0028.jpg', 
+      title: 'Advanced Training',
+      description: 'Agility and advanced commands'
+    },
+    { 
+      url: 'https://raw.githubusercontent.com/aryandogtrainer/aryan-dog-trainer/main/src/assets/IMG-20250901-WA0031.jpg', 
+      title: 'Advanced Training',
+      description: 'Agility and advanced commands'
     }
   ];
 
