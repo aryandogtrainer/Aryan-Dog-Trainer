@@ -1,4 +1,5 @@
 import { Card, CardContent } from '@/components/ui/card';
+import { useState } from 'react';
 
 const Gallery = () => {
   // Gallery Images Array - Easy to manage!
@@ -6,36 +7,47 @@ const Gallery = () => {
   // Optional: add 'description' for additional text below the title
   const images = [
     { 
-      url: 'https://github.com/aryandogtrainer/aryan-dog-trainer/blob/main/src/assets/hero-image.jpg', 
+      url: 'https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=800&h=800&fit=crop', 
       title: 'Basic Training Session',
       description: 'Puppy learning basic commands'
     },
     { 
-      url: 'https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=800&h=600&fit=crop', 
+      url: 'https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=800&h=800&fit=crop', 
       title: 'Obedience Training',
       description: 'Advanced command training'
     },
     { 
-      url: 'https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=800&h=600&fit=crop', 
+      url: 'https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=800&h=800&fit=crop', 
       title: 'Success Story',
       description: 'Happy dog with owner'
     },
     { 
-      url: 'https://images.unsplash.com/photo-1559190394-fd4d32d4e7a8?w=800&h=600&fit=crop', 
+      url: 'https://images.unsplash.com/photo-1559190394-fd4d32d4e7a8?w=800&h=800&fit=crop', 
       title: 'Group Training',
       description: 'Socialization training'
     },
     { 
-      url: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7f09?w=800&h=600&fit=crop', 
+      url: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7f09?w=800&h=800&fit=crop', 
       title: 'Advanced Training',
       description: 'Agility and advanced commands'
     },
     { 
-      url: 'https://images.unsplash.com/photo-1552053831-71594a27632d?w=800&h=600&fit=crop', 
+      url: 'https://images.unsplash.com/photo-1552053831-71594a27632d?w=800&h=800&fit=crop', 
       title: 'Therapy Training',
       description: 'Emotional support training'
     }
   ];
+
+  // Fallback image for broken URLs
+  const fallbackImage = 'https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=800&h=800&fit=crop';
+
+  // Handle image load errors
+  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
+    const target = e.target as HTMLImageElement;
+    if (target.src !== fallbackImage) {
+      target.src = fallbackImage;
+    }
+  };
 
   return (
     <div>
@@ -52,33 +64,34 @@ const Gallery = () => {
       {/* Responsive Gallery Grid */}
       <section className="py-16 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Responsive grid: 1 column on mobile, 2 on tablet, 3 on desktop */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+          {/* Responsive grid: 1 column on mobile, 2 on tablet, 3-4 on desktop */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
             {images.map((image, index) => (
               <Card 
                 key={index}
-                className="group overflow-hidden border-0 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+                className="group overflow-hidden border-0 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
               >
                 <CardContent className="p-0">
-                  {/* Image container with hover effects */}
-                  <div className="relative overflow-hidden">
+                  {/* Square image container with hover effects */}
+                  <div className="relative aspect-square overflow-hidden">
                     <img
                       src={image.url}
                       alt={image.title}
-                      className="w-full h-48 sm:h-56 lg:h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                      className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110"
                       loading="lazy"
+                      onError={handleImageError}
                     />
                     {/* Hover overlay */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   </div>
                   
                   {/* Content section */}
-                  <div className="p-4 sm:p-6">
-                    <h3 className="font-semibold text-lg text-foreground mb-2 group-hover:text-primary transition-colors duration-300">
+                  <div className="p-3 sm:p-4">
+                    <h3 className="font-semibold text-base text-foreground mb-1 group-hover:text-primary transition-colors duration-300">
                       {image.title}
                     </h3>
                     {image.description && (
-                      <p className="text-sm text-muted-foreground leading-relaxed">
+                      <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
                         {image.description}
                       </p>
                     )}
