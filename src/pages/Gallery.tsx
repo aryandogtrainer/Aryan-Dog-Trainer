@@ -12,12 +12,12 @@ const Gallery = () => {
       description: 'Puppy learning basic commands'
     },
     { 
-      url: 'https://raw.githubusercontent.com/aryandogtrainer/aryan-dog-trainer/blob/main/src/assets/IMG_20250612_144515.jpg', 
+      url: 'https://raw.githubusercontent.com/aryandogtrainer/aryan-dog-trainer/blob/main/src/assets/imgi_22_default.jpg', 
       title: 'Obedience Training',
       description: 'Advanced command training'
     },
     { 
-      url: 'https://raw.githubusercontent.com/aryandogtrainer/aryan-dog-trainer/blob/main/src/assets/IMG-20250901-WA0031.jpg', 
+      url: 'https://raw.githubusercontent.com/aryandogtrainer/aryan-dog-trainer/blob/main/src/assets/imgi_22_default.jpg', 
       title: 'Success Story',
       description: 'Happy dog with owner'
     },
