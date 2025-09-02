@@ -37,7 +37,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-800">Phone Number</h3>
-                    <p className="text-gray-600">+91 97195 88684</p>
+                    <p className="text-gray-600">+91 9719588684</p>
                   </div>
                 </div>
 
@@ -81,7 +81,7 @@ const Contact = () => {
                 <h3 className="font-semibold text-gray-800 mb-4">Follow Us</h3>
                 <div className="flex space-x-3">
                   <a
-                    href="https://www.instagram.com"
+                    href="https://www.instagram.com/aryan_pandit_239236/?igsh=bWZldGw5bTF0Y3Fn#"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-10 h-10 bg-pink-500 rounded-full flex items-center justify-center hover:bg-pink-600 transition-colors"
@@ -89,7 +89,7 @@ const Contact = () => {
                     <Instagram className="w-5 h-5 text-white" />
                   </a>
                   <a
-                    href="https://www.facebook.com"
+                    href="https://www.facebook.com/aryan.sharma.809557?rdid=PP0QH4230F8eAeb8&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1B78q7FhF5%2F#"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors"
