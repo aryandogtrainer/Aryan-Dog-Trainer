@@ -1,63 +1,41 @@
-import { useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { ExternalLink } from 'lucide-react';
 
 const Gallery = () => {
-  // Sample gallery images with links (replace with actual images)
-  const galleryImages = [
-    {
-      id: 1,
-      title: "Basic Training Session",
-      description: "Puppy learning basic commands",
-      imageUrl: "https://github.com/aryandogtrainer/aryan-dog-trainer/blob/main/src/assets/hero-image.jpg",
-      link: ""
+  // Gallery Images Array - Easy to manage!
+  // To add new images: simply add a new object to this array with 'url' and 'title' properties
+  // Optional: add 'description' for additional text below the title
+  const images = [
+    { 
+      url: 'https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=800&h=600&fit=crop', 
+      title: 'Basic Training Session',
+      description: 'Puppy learning basic commands'
     },
-    {
-      id: 2,
-      title: "Obedience Training",
-      description: "Advanced command training",
-      imageUrl: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400&h=300&fit=crop",
-      link: "https://images.unsplash.com/photo-1587300003388-59208cc962cb"
+    { 
+      url: 'https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=800&h=600&fit=crop', 
+      title: 'Obedience Training',
+      description: 'Advanced command training'
     },
-    {
-      id: 3,
-      title: "Guard Training",
-      description: "Protection training session",
-      imageUrl: "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=400&h=300&fit=crop",
-      link: "https://images.unsplash.com/photo-1583337130417-3346a1be7dee"
+    { 
+      url: 'https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=800&h=600&fit=crop', 
+      title: 'Success Story',
+      description: 'Happy dog with owner'
     },
-    {
-      id: 4,
-      title: "Success Story",
-      description: "Happy dog with owner",
-      imageUrl: "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=400&h=300&fit=crop",
-      link: "https://images.unsplash.com/photo-1601758228041-f3b2795255f1"
+    { 
+      url: 'https://images.unsplash.com/photo-1559190394-fd4d32d4e7a8?w=800&h=600&fit=crop', 
+      title: 'Group Training',
+      description: 'Socialization training'
     },
-    {
-      id: 5,
-      title: "Group Training",
-      description: "Socialization training",
-      imageUrl: "https://images.unsplash.com/photo-1559190394-fd4d32d4e7a8?w=400&h=300&fit=crop",
-      link: "https://images.unsplash.com/photo-1559190394-fd4d32d4e7a8"
+    { 
+      url: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7f09?w=800&h=600&fit=crop', 
+      title: 'Advanced Training',
+      description: 'Agility and advanced commands'
     },
-    {
-      id: 6,
-      title: "Advanced Training",
-      description: "Agility and advanced commands",
-      imageUrl: "https://images.unsplash.com/photo-1558618047-3c8c76ca7f09?w=400&h=300&fit=crop",
-      link: "https://images.unsplash.com/photo-1558618047-3c8c76ca7f09"
+    { 
+      url: 'https://images.unsplash.com/photo-1552053831-71594a27632d?w=800&h=600&fit=crop', 
+      title: 'Therapy Training',
+      description: 'Emotional support training'
     }
   ];
-
-  const [selectedImage, setSelectedImage] = useState<typeof galleryImages[0] | null>(null);
-
-  const handleImageClick = (image: typeof galleryImages[0]) => {
-    setSelectedImage(image);
-  };
-
-  const closeModal = () => {
-    setSelectedImage(null);
-  };
 
   return (
     <div>
@@ -71,102 +49,60 @@ const Gallery = () => {
         </div>
       </section>
 
-      {/* Gallery Grid */}
-      <section className="py-16">
+      {/* Responsive Gallery Grid */}
+      <section className="py-16 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {galleryImages.map((image) => (
+          {/* Responsive grid: 1 column on mobile, 2 on tablet, 3 on desktop */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+            {images.map((image, index) => (
               <Card 
-                key={image.id} 
-                className="cursor-pointer hover:shadow-lg transition-shadow group"
-                onClick={() => handleImageClick(image)}
+                key={index}
+                className="group overflow-hidden border-0 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
               >
                 <CardContent className="p-0">
-                  <div className="relative overflow-hidden rounded-lg">
+                  {/* Image container with hover effects */}
+                  <div className="relative overflow-hidden">
                     <img
-                      src={image.imageUrl}
+                      src={image.url}
                       alt={image.title}
-                      className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                      className="w-full h-48 sm:h-56 lg:h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                      loading="lazy"
                     />
-                    <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
-                      <ExternalLink className="w-6 h-6 text-white opacity-0 group-hover:opacity-100 transition-opacity" />
-                    </div>
+                    {/* Hover overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   </div>
-                  <div className="p-4">
-                    <h3 className="font-semibold text-secondary mb-2">{image.title}</h3>
-                    <p className="text-muted-foreground text-sm">{image.description}</p>
+                  
+                  {/* Content section */}
+                  <div className="p-4 sm:p-6">
+                    <h3 className="font-semibold text-lg text-foreground mb-2 group-hover:text-primary transition-colors duration-300">
+                      {image.title}
+                    </h3>
+                    {image.description && (
+                      <p className="text-sm text-muted-foreground leading-relaxed">
+                        {image.description}
+                      </p>
+                    )}
                   </div>
                 </CardContent>
               </Card>
             ))}
           </div>
+          
+          {/* Instructions for adding new images */}
+          <div className="mt-12 p-6 bg-muted/50 rounded-lg border-l-4 border-primary">
+            <h3 className="font-semibold text-foreground mb-2">📸 How to Add New Images</h3>
+            <p className="text-sm text-muted-foreground mb-3">
+              To add new images to this gallery, simply update the <code className="bg-primary/10 px-2 py-1 rounded text-primary">images</code> array in the component:
+            </p>
+            <div className="bg-card p-4 rounded-md border text-sm font-mono">
+              <div className="text-muted-foreground">// Add this to the images array:</div>
+              <div className="text-foreground mt-1">
+                {`{ url: 'your-image-url.jpg', title: 'Your Title', description: 'Optional description' }`}
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-
-      {/* Upload Instructions */}
-      {/*<section className="py-16 bg-muted">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-secondary mb-6">
-            Add Your Training Photos
-          </h2>
-          <div className="bg-white rounded-lg p-8 shadow-card">
-            <h3 className="text-xl font-semibold text-secondary mb-4">How to Add Photos to Gallery</h3>
-            <div className="text-left space-y-4 text-muted-foreground">
-              <p><strong>For Website Owner:</strong></p>
-              <ol className="list-decimal list-inside space-y-2 ml-4">
-                <li>Upload images up to 1 MB each to the gallery folder</li>
-                <li>Each uploaded image will create a separate folder automatically</li>
-                <li>When the website code is pushed to GitHub, gallery images remain saved</li>
-                <li>All gallery images are stored safely in the repository</li>
-                <li>Images can be accessed directly from GitHub without being lost during updates</li>
-              </ol>
-              <p className="mt-4 p-4 bg-light-orange rounded-lg">
-                <strong>Note:</strong> This gallery currently displays sample images. 
-                Replace the image URLs in the Gallery component with your actual training photos.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>*/}
-
-      {/* Modal for enlarged image */}
-      {selectedImage && (
-        <div 
-          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4"
-          onClick={closeModal}
-        >
-          <div className="bg-white rounded-lg max-w-4xl w-full max-h-full overflow-auto">
-            <div className="p-4">
-              <div className="flex justify-between items-center mb-4">
-                <h3 className="text-xl font-semibold text-secondary">{selectedImage.title}</h3>
-                <button 
-                  onClick={closeModal}
-                  className="text-muted-foreground hover:text-secondary text-2xl"
-                >
-                  ×
-                </button>
-              </div>
-              <img
-                src={selectedImage.link}
-                alt={selectedImage.title}
-                className="w-full h-auto rounded-lg"
-              />
-              <p className="text-muted-foreground mt-4">{selectedImage.description}</p>
-              <div className="mt-4">
-                <a 
-                  href={selectedImage.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-primary hover:underline flex items-center gap-2"
-                >
-                  <ExternalLink className="w-4 h-4" />
-                  View Full Size Image
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
     </div>
   );
 };
