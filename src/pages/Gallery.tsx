@@ -12,27 +12,27 @@ const Gallery = () => {
       description: 'Puppy learning basic commands'
     },
     { 
-      url: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRm0ge7PX0KnT2QZX2Om3VOITffIJic0L3Ak87gLryDwggU8nyA9491ej1HruVBn0nBeuIrypCUW-y-4J1He84Fbmz-eRPJLWibTTgeKgcfPA', 
+      url: 'https://raw.githubusercontent.com/aryandogtrainer/aryan-dog-trainer/main/src/assets/IMG_20250612_144515', 
       title: 'Obedience Training',
       description: 'Advanced command training'
     },
     { 
-      url: 'https://raw.githubusercontent.com/aryandogtrainer/aryan-dog-trainer/blob/main/src/assets/imgi_22_default.jpg', 
+      url: 'https://raw.githubusercontent.com/aryandogtrainer/aryan-dog-trainer/main/src/assets/', 
       title: 'Success Story',
       description: 'Happy dog with owner'
     },
     { 
-      url: 'https://raw.githubusercontent.com/aryandogtrainer/aryan-dog-trainer/blob/main/src/assets/IMG-20250901-WA0009.jpg', 
+      url: 'https://raw.githubusercontent.com/aryandogtrainer/aryan-dog-trainer/main/src/assets/', 
       title: 'Group Training',
       description: 'Socialization training'
     },
     { 
-      url: 'https://raw.githubusercontent.com/aryandogtrainer/aryan-dog-trainer/blob/main/src/assets/IMG-20250901-WA0009.jpg', 
+      url: 'https://raw.githubusercontent.com/aryandogtrainer/aryan-dog-trainer/main/src/assets/', 
       title: 'Advanced Training',
       description: 'Agility and advanced commands'
     },
     { 
-      url: 'https://raw.githubusercontent.com/aryandogtrainer/aryan-dog-trainer/blob/main/src/assets/IMG-20250901-WA0009.jpg', 
+      url: 'https://raw.githubusercontent.com/aryandogtrainer/aryan-dog-trainer/main/src/assets/', 
       title: 'Therapy Training',
       description: 'Emotional support training'
     }
