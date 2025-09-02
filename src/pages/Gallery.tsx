@@ -23,8 +23,8 @@ const Gallery = () => {
     },
     { 
       url: 'https://raw.githubusercontent.com/aryandogtrainer/aryan-dog-trainer/main/src/assets/IMG-20250901-WA0011.jpg', 
-      title: 'Group Training',
-      description: 'Socialization training'
+      title: '50 Dog Training Command',
+      description: 'Full Training Guide'
     },
     { 
       url: 'https://raw.githubusercontent.com/aryandogtrainer/aryan-dog-trainer/main/src/assets/IMG-20250901-WA0015.jpg', 
