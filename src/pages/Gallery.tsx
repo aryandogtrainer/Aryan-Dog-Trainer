@@ -39,7 +39,7 @@ const Gallery = () => {
   ];
 
   // Fallback image for broken URLs
-  const fallbackImage = 'https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=800&h=800&fit=crop';
+  const fallbackImage = 'https://raw.githubusercontent.com/aryandogtrainer/aryan-dog-trainer/main/src/assets/IMG-20250901-WA0012.jpg';
 
   // Handle image load errors
   const handleImageError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
