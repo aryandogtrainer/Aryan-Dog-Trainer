@@ -17,7 +17,7 @@ const Gallery = () => {
       description: 'Advanced command training'
     },
     { 
-      url: 'https://raw.githubusercontent.com/aryandogtrainer/aryan-dog-trainer/blob/main/src/assets/IMG-20250901-WA0009.jpg', 
+      url: 'https://raw.githubusercontent.com/aryandogtrainer/aryan-dog-trainer/blob/main/src/assets/IMG-20250901-WA0011.jpg', 
       title: 'Success Story',
       description: 'Happy dog with owner'
     },
