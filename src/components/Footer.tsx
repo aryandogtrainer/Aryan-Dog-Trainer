@@ -127,7 +127,7 @@ const Footer = () => {
           {/* Extra Footer (PolIntro Web Solutions) */}
         <div style={{ background: "#111", color: "#fff", textAlign: "center", padding: "15px 0", fontFamily: "Arial, sans-serif" }}>
           <p style={{ margin: 0, fontSize: "14px" }}>
-            Created by <span style={{ color: "#00c3ff", fontWeight: "bold" }}>PolIntro Web Solutions</span> |{" "}
+            Created by <span style={{ color: "#00c3ff", fontWeight: "bold" }}>Polintro Web Solutions</span> |{" "}
             <a href="https://www.polintro.vercel.app" target="_blank" rel="noopener noreferrer" style={{ color: "#ff9800", textDecoration: "none" }}>
               2025
             </a>
