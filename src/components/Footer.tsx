@@ -124,7 +124,7 @@ const Footer = () => {
           </div>
         </div>
 
-          {/* Extra Footer (PolIntro Web Solutions) */}
+          {/* Extra Footer (Polintro Web Solutions) */}
          <div
         style={{
         background: "#111",
@@ -142,7 +142,7 @@ const Footer = () => {
       rel="noopener noreferrer"
       style={{ color: "#00c3ff", fontWeight: "bold", textDecoration: "none" }}
       >
-        PolIntro Web Solutions
+        Polintro Web Solutions
         </a>{" "}
     |   <span style={{ color: "#ff9800" }}>2025</span>
       </p>
