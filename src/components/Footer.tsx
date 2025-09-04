@@ -125,29 +125,29 @@ const Footer = () => {
         </div>
 
           {/* Extra Footer (PolIntro Web Solutions) */}
-       <div
-  style={{
-    background: "#111",
-    color: "#fff",
-    textAlign: "center",
-    padding: "15px 0",
-    fontFamily: "Arial, sans-serif",
-  }}
->
-  <p style={{ margin: 0, fontSize: "14px" }}>
-    Created by{" "}
-    <a
+         <div
+        style={{
+        background: "#111",
+        color: "#fff",
+        textAlign: "center",
+        padding: "15px 0",
+        fontFamily: "Arial, sans-serif",
+      }}
+    >
+      <p style={{ margin: 0, fontSize: "14px" }}>
+        Created by{" "}
+      <a
       href="https://polintro.vercel.app"
       target="_blank"
       rel="noopener noreferrer"
       style={{ color: "#00c3ff", fontWeight: "bold", textDecoration: "none" }}
-    >
-      PolIntro Web Solutions
-    </a>{" "}
-    | <span style={{ color: "#ff9800" }}>2025</span>
-  </p>
-</div>
-      </footer>
+      >
+        PolIntro Web Solutions
+        </a>{" "}
+    |   <span style={{ color: "#ff9800" }}>2025</span>
+      </p>
+        </div>
+        </footer>
     </div>
   );
 };
